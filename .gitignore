@@ -1,0 +1,24 @@
+# OS specific
+.DS_Store
+
+# Dependency directories
+node_modules/
+.npm
+
+# Outputs
+lib/
+coverage/
+*.tgz
+
+# Lock files
+package-lock.json
+yarn.lock
+.yarn-integrity
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*

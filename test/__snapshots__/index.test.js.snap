@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`babel-plugin-transform-react-remove-prop \`attrs\` parameter removes necessary attributes 1`] = `
+"h(\\"div\\", {
+  \\"custom-id-3\\": \\"custom-3\\"
+});"
+`;
+
+exports[`babel-plugin-transform-react-remove-prop JSX syntax removes attribute 1`] = `"<div test-id=\\"JSX\\" label=\\"JSX\\" />;"`;
+
+exports[`babel-plugin-transform-react-remove-prop JSX syntax removes test-id attribute from spread 1`] = `
+"<div {...{
+  label: \\"Spread\\"
+}} />;"
+`;
+
+exports[`babel-plugin-transform-react-remove-prop keeps \`createElement\` arguments if it was called on custom object 1`] = `
+"obj.createElement(\\"div\\", {
+  \\"data-test-id\\": \\"custom obj\\"
+});"
+`;
+
+exports[`babel-plugin-transform-react-remove-prop keeps other attributes 1`] = `
+"React.createElement(\\"div\\", {
+  \\"test-id\\": \\"Standard\\",
+  label: \\"Standard\\"
+});"
+`;
+
+exports[`babel-plugin-transform-react-remove-prop non react does not remove Identifier parameters 1`] = `
+"func(\\"div\\", {
+  \\"data-test-id\\": \\"Keep it\\"
+});"
+`;
+
+exports[`babel-plugin-transform-react-remove-prop non react does not remove MemberExpression parameters 1`] = `
+"some.func(\\"div\\", {
+  \\"data-test-id\\": \\"Keep it\\"
+});"
+`;
+
+exports[`babel-plugin-transform-react-remove-prop preact removes attribute 1`] = `
+"h(\\"div\\", {
+  label: \\"Preact\\"
+});"
+`;
+
+exports[`babel-plugin-transform-react-remove-prop removes attribute 1`] = `"React.createElement(\\"div\\", {});"`;
+
+exports[`babel-plugin-transform-react-remove-prop removes attribute if called without React 1`] = `"createElement(\\"div\\", {});"`;
+
+exports[`babel-plugin-transform-react-remove-prop works correctly if there is no properties 1`] = `"createElement(\\"div\\", null, \\"Children\\");"`;
+
+exports[`babel-plugin-transform-react-remove-prop works with Object.assign 1`] = `
+"React.createElement(\\"div\\", Object.assign({}, {
+  label: \\"Custom obj\\"
+}, {
+  \\"another-attr\\": \\"Custom obj\\"
+}));"
+`;

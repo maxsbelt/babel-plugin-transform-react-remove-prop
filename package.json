@@ -1,0 +1,50 @@
+{
+  "name": "babel-plugin-transform-react-remove-prop",
+  "description": "Remove selected attributes in each react element by selected conditions",
+  "version": "0.1.0",
+  "repository": "git@github.com:maxsbelt/babel-plugin-transform-react-remove-prop.git",
+  "author": "Sergey Makarov <serega.s.makar@gmail.com>",
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "babel src -d lib",
+    "test": "jest",
+    "lint": "eslint .",
+    "format": "eslint --fix .",
+    "clean": "rimraf lib coverage",
+    "prepack": "run-s clean format test build"
+  },
+  "keywords": [
+    "babel-plugin",
+    "react"
+  ],
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-syntax-jsx": "^7.2.0",
+    "@babel/preset-env": "^7.5.5",
+    "babel-eslint": "^10.0.2",
+    "eslint": "^6.1.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "husky": "^3.0.3",
+    "jest": "^24.9.0",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^3.0.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint"
+    }
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "collectCoverage": true,
+    "transform": {
+      ".+\\.js": "babel-jest"
+    }
+  }
+}
