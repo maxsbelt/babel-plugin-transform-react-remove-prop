@@ -1,7 +1,7 @@
 {
   "name": "babel-plugin-transform-react-remove-prop",
   "description": "Remove selected attributes in each react element by selected conditions",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "repository": "git@github.com:maxsbelt/babel-plugin-transform-react-remove-prop.git",
   "author": "Sergey Makarov <serega.s.makar@gmail.com>",
   "main": "lib/index.js",
