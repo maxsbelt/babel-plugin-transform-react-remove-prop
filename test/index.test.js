@@ -41,6 +41,10 @@ describe('babel-plugin-transform-react-remove-prop', () => {
     `React.createElement("div", Object.assign({}, { "${DEFAULT_ATTRIBUTE}": "Custom obj", label: "Custom obj" }, { "another-attr": "Custom obj" }))`,
   ))
 
+  it('works with object spread syntax', () => testSnapshot(
+    `React.createElement("div", { ...props, "${DEFAULT_ATTRIBUTE}": "Custom obj", label: "Custom obj" })`,
+  ))
+
   describe('preact', () => {
     it('removes attribute', () => testSnapshot(
       `h("div", { "${DEFAULT_ATTRIBUTE}": "Preact", label: "Preact" })`,

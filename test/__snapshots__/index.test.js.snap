@@ -58,3 +58,9 @@ exports[`babel-plugin-transform-react-remove-prop works with Object.assign 1`] =
   \\"another-attr\\": \\"Custom obj\\"
 }));"
 `;
+
+exports[`babel-plugin-transform-react-remove-prop works with object spread syntax 1`] = `
+"React.createElement(\\"div\\", { ...props,
+  label: \\"Custom obj\\"
+});"
+`;
