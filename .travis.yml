@@ -3,10 +3,18 @@ node_js:
   - 10
   - 12
 install:
+  - npm install -g npm
   - npm install
+  - npm install coveralls
 script:
   - npm run lint
   - npm test
 cache:
   directories:
     - node_modules
+jobs:
+  include:
+    - stage: coverage
+      node_js: "10"
+      script:
+        - npm run test -- --coverage && cat ./coverage/lcov.info | coveralls
