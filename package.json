@@ -2,13 +2,20 @@
   "name": "babel-plugin-transform-react-remove-prop",
   "description": "Remove selected attributes in each react element by selected conditions",
   "version": "0.1.1",
-  "repository": "git@github.com:maxsbelt/babel-plugin-transform-react-remove-prop.git",
+  "homepage": "https://github.com/maxsbelt/babel-plugin-transform-react-remove-prop#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maxsbelt/babel-plugin-transform-react-remove-prop.git"
+  },
   "author": "Sergey Makarov <serega.s.makar@gmail.com>",
   "main": "lib/index.js",
   "files": [
     "lib"
   ],
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/maxsbelt/babel-plugin-transform-react-remove-prop/issues"
+  },
   "scripts": {
     "build": "babel src -d lib",
     "test": "jest",
