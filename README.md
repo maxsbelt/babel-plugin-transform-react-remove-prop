@@ -3,7 +3,8 @@
 > Remove selected attributes in each react element by selected conditions
 
 [![npm version](https://img.shields.io/npm/v/babel-plugin-transform-react-remove-prop.svg?style=flat-square)](https://www.npmjs.com/package/babel-plugin-transform-react-remove-prop) [![build status](https://travis-ci.org/maxsbelt/babel-plugin-transform-react-remove-prop.svg?branch=master)](https://travis-ci.org/maxsbelt/babel-plugin-transform-react-remove-prop)   [![tested with jest](https://img.shields.io/badge/tested_with-jest-99424f.svg)](https://github.com/facebook/jest) [![Coverage Status](https://coveralls.io/repos/github/maxsbelt/babel-plugin-transform-react-remove-prop/badge.svg?branch=master)](https://coveralls.io/github/maxsbelt/babel-plugin-transform-react-remove-prop?branch=master)
-[![Dependencies](https://img.shields.io/david/maxsbelt/babel-plugin-transform-react-remove-prop.svg)](https://david-dm.org/maxsbelt/babel-plugin-transform-react-remove-prop) [![DevDependencies](https://img.shields.io/david/dev/maxsbelt/babel-plugin-transform-react-remove-prop.svg)](https://david-dm.org/maxsbelt/babel-plugin-transform-react-remove-prop?type=dev)
+
+[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release) [![Dependencies](https://img.shields.io/david/maxsbelt/babel-plugin-transform-react-remove-prop.svg)](https://david-dm.org/maxsbelt/babel-plugin-transform-react-remove-prop) [![DevDependencies](https://img.shields.io/david/dev/maxsbelt/babel-plugin-transform-react-remove-prop.svg)](https://david-dm.org/maxsbelt/babel-plugin-transform-react-remove-prop?type=dev)
 
 ## Install
 
