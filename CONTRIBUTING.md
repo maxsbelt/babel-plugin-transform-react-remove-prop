@@ -6,19 +6,8 @@ Contributions are always welcome, no matter how large or small.
 
 #### Node
 
-Install [nodenv](https://github.com/nodenv/nodenv) and add append initializer in `.bash_profile`:
-
-```bash
-$ brew install nodenv
-$ eval "$(nodenv init -)" # add it to .bash_profile
-```
-
-Install latest lts Node.js version:
-
-```bash
-ndenv install 10.16.0
-ndenv global 10.16.0
-```
+See node installation requirements here (you need node v12.x.x):
+https://gist.github.com/maxsbelt/a401dd0c3da8b0e1d50c9eebd2eccf65
 
 #### Linter
 
