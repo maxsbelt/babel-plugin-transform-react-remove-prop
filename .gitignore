@@ -11,7 +11,6 @@ coverage/
 *.tgz
 
 # Lock files
-package-lock.json
 yarn.lock
 .yarn-integrity
 
