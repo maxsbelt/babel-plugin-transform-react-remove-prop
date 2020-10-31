@@ -6,7 +6,7 @@ Contributions are always welcome, no matter how large or small.
 
 #### Node
 
-See node installation requirements here (you need node v12.x.x):
+See node installation requirements here (you need node v14.x.x):
 https://gist.github.com/maxsbelt/a401dd0c3da8b0e1d50c9eebd2eccf65
 
 #### Linter
