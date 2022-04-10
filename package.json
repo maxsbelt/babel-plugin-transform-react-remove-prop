@@ -19,6 +19,7 @@
   "scripts": {
     "build": "babel src -d lib",
     "test": "jest",
+    "test:coverage": "npm test -- --coverage",
     "lint": "eslint .",
     "format": "eslint --fix .",
     "clean": "rimraf lib coverage",
