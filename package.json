@@ -23,6 +23,7 @@
     "format": "eslint --fix .",
     "clean": "rimraf lib coverage",
     "prepack": "run-s clean format test build",
+    "prepare": "husky install",
     "semantic-release": "semantic-release"
   },
   "keywords": [
@@ -35,19 +36,17 @@
     "@babel/eslint-parser": "^7.17.0",
     "@babel/plugin-syntax-jsx": "^7.16.7",
     "@babel/preset-env": "^7.16.11",
+    "@commitlint/cli": "^16.2.3",
+    "@commitlint/config-conventional": "^16.2.1",
     "eslint": "^8.13.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.26.0",
     "husky": "^7.0.4",
     "jest": "^27.5.1",
+    "lint-staged": "^12.3.7",
     "npm-run-all": "^4.1.5",
     "rimraf": "^3.0.2",
     "semantic-release": "^19.0.2"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run lint"
-    }
   },
   "jest": {
     "testEnvironment": "node",
